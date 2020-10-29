@@ -1,0 +1,36 @@
+class Restuarant
+{
+public void menu()
+{
+System.out.println("1.Idly 2.dosa 3.wada 4.poori");
+}
+public void takeOrder(String order)
+{
+System.out.println("Order given is="+order);
+}
+public String serveFood()
+{
+return "Dosa";
+}
+public int giveBill()
+{ 
+return 220;
+}
+public String payBill(int amount)
+{
+System.out.println("amount given is="+amount);
+return "paid";
+}
+}
+class Customer
+{
+public static void main(String[] args)
+{
+Restuarant ohris=new Restuarant();
+ohris.menu();
+ohris.takeOrder("Dosa");
+System.out.println("Food served is"+ohris.serveFood());
+System.out.println("Bill is="+ohris.giveBill());
+System.out.println("Bill"+ohris.payBill(220))
+}
+}
