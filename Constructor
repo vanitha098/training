@@ -1,0 +1,65 @@
+class Employee
+{
+int emp_id;
+String emp_firstname;
+String emp_lastname;
+String Designation;
+int Salary;
+int Bonus;
+String Address;
+String Postalcode;
+String Country;
+String contact_number;
+
+ public Employee()
+{
+this.emp_id=101;
+this.emp_firstname="Vanitha";
+this.emp_lastname="Mld";
+this.Designation="Intern";
+this.Salary=6000;
+this.Bonus=1000;
+this.Address="Vijayawada";
+this.Postalcode="520001";
+this.Country="India";
+this.contact_number="7569075673";
+}
+ public Employee(int emp_id,String emp_firstname,String emp_lastname,String Designation,int Salary,int Bonus,String Address,String Postalcode,String Country,String contact_number)
+{
+this.emp_id=emp_id;
+this.emp_firstname=emp_firstname;;
+this.emp_lastname=emp_lastname;
+this.Designation=Designation;
+this.Salary=Salary;
+this.Bonus=Bonus;
+this.Address=Address;
+this.Postalcode=Postalcode;
+this.Country=Country;
+this.contact_number=contact_number;
+}
+public void empInfo()
+{
+System.out.println("================Employee Details==============");
+System.out.println("Emp_id is:="+this.emp_id);
+System.out.println("Emp_firstname is:="+this.emp_firstname);
+System.out.println("Emp_lastname is:="+this.emp_lastname);
+System.out.println("Designation is:="+this.Designation);
+System.out.println("Salary is:="+this.Salary);
+System.out.println("Bonus is:="+this.Bonus);
+System.out.println("Address is:="+System.out.println("Address is:="+this.Address);
+System.out.println("Postalcode is:="+this.Postalcode);
+System.out.println("Country is:="+this.Country);
+System.out.println("Contact_number is:="+this.contact_number);
+}
+}
+class Constructor
+{
+public static void main(String[] args)
+{
+Employee sug=new Employee();
+sug.empInfo();
+Employee sid=new Employee(102,"Siddu","Malla","Software Engineer",20000,1000,"Hyderabad","534201","India","7569075673");
+sid.empInfo();
+}
+}
+
